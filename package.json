@@ -9,7 +9,7 @@
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
     "export-snapshot": "content-island export",
-    "build": "npm run export-snapshot && vite build",
+    "build": "echo '⏳ [build] Exportando snapshot de Content Island...' && npm run export-snapshot && echo '✅ [build] Snapshot generado:' && ls -la content-island-snapshot.json && vite build",
     "preview": "vite preview",
     "test": "vitest run"
   },
