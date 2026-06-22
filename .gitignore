@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+
+# content snapshot: se genera (export), NO se versiona
+content-island-snapshot.json
+dist
+dist-ssr
+*.local
+.env
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+__unconfig*
+todos.json

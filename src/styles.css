@@ -1,0 +1,48 @@
+/* Global theme (portado de layout.astro de la inmobiliaria Astro). Sin Tailwind. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-midnight: #080f1a;
+  --color-navy: #0d1b2a;
+  --color-ivory: #f0e8d5;
+  --color-ivory-muted: #b8ae98;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e0c06e;
+  --font-display: "Cormorant Garant", Georgia, serif;
+  --font-body: "Jost", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-navy);
+  color: var(--color-ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Sello de prueba de SSR (timestamp del render en servidor; cambia en cada recarga) */
+.ssr-stamp {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-ivory-muted);
+  padding: 1.25rem;
+  background: var(--color-midnight);
+}
