@@ -17,8 +17,8 @@ const accessToken =
 
 export const client = createClient({
   accessToken,
-  // mode: "snapshot",
-  // snapshotPath,
+  mode: "snapshot",
+  snapshotPath,
 });
 
 export const snapshotInfo = { snapshotPath, accessToken };
