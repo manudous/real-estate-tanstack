@@ -9,7 +9,7 @@
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
     "export-snapshot": "content-island export",
-    "build": "vite build",
+    "build": "npm run export-snapshot && vite build",
     "preview": "vite preview",
     "test": "vitest run"
   },
